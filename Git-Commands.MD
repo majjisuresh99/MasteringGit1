@@ -73,3 +73,30 @@ _____
 |`git stash list` |  List all stash |
 |`git stash save "add style to our site"` | Provide more context |
 |`git stash pop`| apply recent stash|
+
+### Git Reset vs Revert vs Checkout reference
+
+The git reset, git checkout, and git revert commands are some of the most useful tools in your Git toolbox. They all let you undo some kind of change in your repository, and the first two commands can be used to manipulate either commits or individual files
+
+
+| Command | Scope   | Common use cases |
+| --------|---------|------------------|
+| `git reset`|	Commit-level |	Discard commits in a private branch or throw away uncommited changes|
+| `git reset`|	File-level |	Unstage a files|
+| `git checkout`|	Commit-level |	Unstage a files|
+| `git checkout`|	File-levell |	Discard changes in the working directory |
+| `git revert`|	Commit-level |	Undo commits in a public branch |
+| `git revert`|		File-level |(N/A) |
+
+### Commit Level Operations
+|Command | Comment|
+|------- |--------|
+|`git checkout hotfix git reset HEAD~2`|moves the hotfix branch backwards by two commits|
+
+### Reset Flags
+
+|Reset-Flags | Comment|
+|----------- |--------|
+|`--soft`|The staged snapshot and working directory are not altered in any way.|
+|`--mixed`|The staged snapshot is updated to match the specified commit, but the working directory is not affected. This is the default option|
+|`--hard`| The staged snapshot and the working directory are both updated to match the specified commit.|
