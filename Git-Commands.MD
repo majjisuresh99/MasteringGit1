@@ -60,7 +60,11 @@ Git Commands
 | `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
 
-### Inspection & Comparison
+### Stash
+
+git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on. Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit.
+_____
+
 | Command | Description |
 | ------- | ----------- |
 | `git stash` | The uncommitted changes (staged and unstaged files) and overlooks untracked and ignored files  |
