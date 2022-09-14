@@ -1,3 +1,4 @@
+hi this is my sample project
 # This Project deals with all the git realated activities 
 
 ## Creating a New Repository 
