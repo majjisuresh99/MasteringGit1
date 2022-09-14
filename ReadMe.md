@@ -1,5 +1,5 @@
 hi this is my sample project
-majji suresh
+majji suresh1
 # This Project deals with all the git realated activities 
 
 ## Creating a New Repository 
